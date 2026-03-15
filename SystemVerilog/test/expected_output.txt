@@ -1,0 +1,9 @@
+VCD info: dumpfile waves/cn_03.vcd opened for output.
+Lettura dopo il reset: [d]   0
+Lettura dopo il reset: [d]   1
+Lettura dopo il reset: [d]   2
+Lettura dopo incremento: [d]   3
+Lettura dopo invio 0x50: [hex] 50
+Lettura dopo invio 0x00: [hex] 00
+Lettura dopo invio 0x7F: [hex] 7f
+test/cn_03_tb.sv:71: $finish called at 712 (1us)

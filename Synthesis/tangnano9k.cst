@@ -1,0 +1,30 @@
+// Ingressi:
+
+// 1) SCK (SPI Clock):
+IO_LOC  "sck" 10;
+IO_PORT "sck" IO_TYPE=LVCMOS33;
+
+// 2) MOSI (Master Out Slave In):
+IO_LOC  "mosi" 13;
+IO_PORT "mosi" IO_TYPE=LVCMOS33;
+
+// 3) CS (Chip Select) (attivo basso):
+IO_LOC  "cs" 15;
+IO_PORT "cs" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+// 4) RESET (attivo alto):
+IO_LOC  "reset" 11;
+IO_PORT "reset" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+// Uscita:
+
+// 5) MISO (Master In Slave Out):
+IO_LOC  "miso" 14;
+IO_PORT "miso" IO_TYPE=LVCMOS33 DRIVE=8;
+
+// Se volessimo usare il bottone S1 per il reset, dovremmo sostituire le righe relative al reset con questa:
+
+// IO_LOC  "reset" 4;
+// IO_PORT "reset" IO_TYPE=LVCMOS33 PULL_MODE=UP; // I bottoni sulla scheda sono attivi bassi, quindi serve un PULL_UP
+
+// Se usiamo il bottone, dobbiamo anche modificare la logica nel SystemVerilog, perché i bottoni sulla Tang Nano 9K sono attivi bassi (leggono 0 quando premuti), mentre il nostro codice usa un reset attivo alto (posedge reset).

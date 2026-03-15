@@ -1,0 +1,21 @@
+# C build artifacts
+C/bin/
+C/obj/
+
+# SystemVerilog simulation artifacts
+SystemVerilog/build/
+SystemVerilog/waves/
+*.vcd
+*.vvp
+*.vvp.result
+
+# Icarus Verilog output
+a.out
+
+# Assembly intermediates
+*.o
+*.bin
+
+# macOS
+.DS_Store
+**/.DS_Store
