@@ -1,6 +1,6 @@
 # CN-03 SPI Counter — Multi-level Hardware/Software Implementation
 
-Final assignment for the Embedded Systems (21501) course (MSc in Artificial Intelligence).
+Final assignment for the Embedded Systems (21501) course (MSc in Computer Engineering).
 Design and implementation of a custom SPI peripheral device (**CN-03**) across three levels of abstraction: RTL hardware, bare-metal software, and FPGA synthesis.
 
 ---
